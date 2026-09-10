@@ -6,7 +6,7 @@ from business_insights import generate_business_insights
 
 st.set_page_config(page_title="InsightGuard",page_icon="🛡️",layout="wide")
 BASE_DIR=Path(__file__).resolve().parent.parent
-DATA_FILE=BASE_DIR/"data"/"business_data.xlsx"
+DATA_FILE=Path(__file__).resolve().parent/"business_data.xlsx"
 HISTORY=BASE_DIR/"output"/"alert_history.csv"
 METRICS=["Revenue","Orders","Traffic","Conversion","Cost","Refunds"]
 
